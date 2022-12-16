@@ -112,7 +112,8 @@ rorcid::orcid_auth()
 
 # set some variablees and build the query  --------------------------------------------------------
 
-# set the working directory where this script is and where you have the data folder
+# set the working directory where this script is
+# a folder called "data" is also expected to be in this directory
 setwd("PASTE YOUR WORKING DIRECTORY HERE")
 
 # set the time period of interest: this script will compile collaboration data since Jan 1 of this year.
@@ -124,6 +125,7 @@ my_year = YYYY;
 ringgold_id <- "enter your institution's ringgold" 
 grid_id <- "enter your institution's grid ID" 
 ror_id <- "enter your institution's ROR ID"
+# leave the @ off the email domain, if you want to catch subdomains (e.g. @tuj.temple.edu)
 email_domain <- "enter your institution's email domain" 
 organization_name <- "enter your organization's name"
 
@@ -213,14 +215,28 @@ my_organizations <- my_employment_data %>%
   count() %>%
   arrange(desc(n))
 
-# you can also filter it with a keyword or set of keywords.
-# this is the short keyword, set at the top of the script
+# filter it with a keyword or set of keywords
+# this is the short keyword, or piped set of keywords, set at the top of the script
 my_organizations_filtered <- my_organizations %>%
   filter(str_detect(organization_name, my_org_keyword))
 
-# filter the dataset to include only the institutions you want. 
+# view the variation in organization names by looking at my_organization_filtered (will open a new tab)
+view(my_organizations_filtered)
+
+# filter the dataset to include only the institutions you want 
+# decide between these two choices:
+# 1. to accept any organization listed in my_organization filtered, run this:
 my_employment_data_filtered <- my_employment_data %>%
-  dplyr::filter(organization_name %in% my_organizations_filtered$organization_name[c(1)])
+  dplyr::filter(organization_name %in% my_organizations_filtered$organization_name[])
+
+# OR 2. to specify which organization name variations to include, copy and paste them here
+# following this example. As you can see there may be messiness in hand-entered organization names.
+# replace these names with the ones you are interested in 
+my_employment_data_filtered <- my_employment_data %>%
+  dplyr::filter(organization_name == "California State University Channel Islands"
+                | organization_name == "California State University, Channel Islands"
+                | organization_name == "California State University-Channel Islands"
+                | organization_name == "California State University  Channel Islands")
 
 # finally, filter to include only people who have NA as the end date
 my_employment_data_filtered_current <- my_employment_data_filtered %>%
