@@ -54,6 +54,9 @@ rm(list = ls())
 
 # Set up orcid / crossref in R environment ------------------------------------------------------------
 
+# if you've already done these steps and set up your bearer token in RStudio
+# you can skip to the next section: "set some variablees and build the query"
+
 # 1. If you haven’t done so already, create an ORCID account at https://orcid.org/signin. 
 # 2. In the upper right corner, click your name, then in the drop-down menu, click Developer Tools. Note: In order to access Developer Tools, you must verify your email address. 
 # 3. If you have not already verified your email address, you will be prompted to do so at this point.
@@ -141,11 +144,34 @@ anchor_region<-"enter your institution's state"
 anchor_country<-"enter your institution's country"
 
 # create the query
+# decide between these two choices:
+# 1. to construct a simple query with the ringgold, grid, ROR ids, email domain, an organization name set above
+# run this:
 my_query <- glue('ringgold-org-id:', ringgold_id, 
                  ' OR grid-org-id:', grid_id, 
                  ' OR ror-org-id:"', ror_id, 
                  '" OR email:*', email_domain, 
                  ' OR affiliation-org-name:"', organization_name, '"')
+
+# OR 2. to customize a more complicated query with multiple ringgold, grid, ROR ids, email domains, or organization names
+# specify which data you want to pull following this example.
+# keep in mind that ROR ID and organization name are strings and need double quotes inside the 
+# single quotes used here for concatenation
+# replace these  example lines from Temple University carefully with ones you are interested in 
+my_query <- glue('ringgold-org-id:', '6558', 
+                 ' OR ringgold-org-id:', '43297',
+                 ' OR ringgold-org-id:', '83908',
+                 ' OR grid-org-id:', 'grid.264727.2', 
+                 ' OR grid-org-id:', 'grid.469246.b', 
+                 ' OR grid-org-id:', 'grid.460938.0', 
+                 ' OR ror-org-id:"', 'https://ror.org/00kx1jb78', 
+                 '" OR ror-org-id:"', 'https://ror.org/04zzmzt85',
+                 '" OR ror-org-id:"', 'https://ror.org/03savr706', 
+                 '" OR email:*', '@temple.edu', 
+                 ' OR email:*', '@tuj.temple.edu', 
+                 ' OR affiliation-org-name:"', 'Temple University',
+                 '" OR affiliation-org-name:"', 'Temple Ambler',
+                 '" OR affiliation-org-name:"', 'Temple Japan', '"')
 
 # get the counts
 ##### TIME: this may hang a bit if institution has many ORCID ID holders(e.g. for Temple University's data [~3500 IDs], this took a few seconds)
@@ -231,12 +257,14 @@ my_employment_data_filtered <- my_employment_data %>%
 
 # OR 2. to specify which organization name variations to include, copy and paste them here
 # following this example. As you can see there may be messiness in hand-entered organization names.
-# replace these names with the ones you are interested in 
+# replace these example names with the ones you are interested in from your my_organizations_filtered list
 my_employment_data_filtered <- my_employment_data %>%
-  dplyr::filter(organization_name == "California State University Channel Islands"
-                | organization_name == "California State University, Channel Islands"
-                | organization_name == "California State University-Channel Islands"
-                | organization_name == "California State University  Channel Islands")
+  dplyr::filter(organization_name == "Temple University"
+                | organization_name == "Temple University "
+                | organization_name == "Temple University Fox School of Business and Management"
+                | organization_name == "Temple University, Japan"
+                | organization_name == "Temple University Japan"
+                | organization_name == "Temple University - Ambler Campus")
 
 # finally, filter to include only people who have NA as the end date
 my_employment_data_filtered_current <- my_employment_data_filtered %>%
