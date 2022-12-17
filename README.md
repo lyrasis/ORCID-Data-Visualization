@@ -29,7 +29,7 @@ Take a moment to verify that your current institution and location are accuratel
 ### 4. Still not sure?
 Reach out to your campus ORCID administrator or Lyrasis for further troubleshooting.
 ## Customizing your own Tableau dashboard
-Refer to the [Customizing your own Tableau dashboard](https://github.com/lyrasis/ORCID-Data-Visualization/blob/main/tableau-visualization/customizing-dashboard.md) page. 
+Refer to the [Customizing your own Tableau dashboard](https://github.com/lyrasis/ORCID-Data-Visualization/blob/main/tableau-visualization/customizing-dashboard.md) page. Be sure to also review the [dashboard documentation](https://github.com/lyrasis/ORCID-Data-Visualization/blob/main/tableau-visualization/dashboard-documentation.md).  
 ## Tableau and accessibility resources
 * [Tableau, A Beginner’s Guide to Tableau Public](https://www.tableau.com/blog/beginners-guide-tableau-public)
 * [Authoring for Accessibility – Tableau](https://onlinehelp.tableau.com/current/pro/desktop/en-us/accessibility_create_view.htm)
