@@ -18,7 +18,7 @@ Collaborations are counted by iterating through each home author and counting th
 The data pulled for each author also looks at their entire careers. The script also pulls the current institution for collaborating authors. This reduces blanks which are greater when trying to pinpoint affiliation at the time of DOI minting because of lack of historical employment entries in ORCID profiles. This also avoids potential discrepancies with date of DOI minting and date of publication, which is sometimes blank. This also treats both authors the same in terms of counting. 
 ## Why can't I find my ORCID iD? 
 If you're having trouble finding your ORCID iD in the data pull or the search, here are a few things you may want to check:
-###1. Do you have an ORCID profile set up?
+### 1. Do you have an ORCID profile set up?
 If you have not yet created an ORCID iD, please visit www.orcid.org to set up your ORCID profile. ORCID sets up a persistent digital identifier (also called an ORCID iD) to distinguish you from other researchers.
 ### 2. Did you set up your ORCID iD after the data pull?
 If you set up your ORCID iD after the data supporting this dashboard were pulled, then your ORCID iD will not show up in the dashboard until the data has been pulled again.
