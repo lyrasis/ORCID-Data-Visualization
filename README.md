@@ -26,7 +26,8 @@ If you set up your ORCID iD after the data supporting this dashboard were pulled
 Take a moment to verify that your current institution and location are accurately listed in your ORCID profile -- typos happen! If you work remotely for an institution, you will have to list the institution's primary location in order to show up in the data. If you correct any information in your ORCID profile after the data supporting this dashboard were pulled, then your ORCID iD will not show up in the dashboard until the data has been pulled again.
 ### 4. Still not sure?
 Reach out to your campus ORCID administrator or Lyrasis for further troubleshooting.
-## Building your own Tableau dashboard
+## Customizing your own Tableau dashboard
+Refer to the [Customizing your own Tableau dashboard](https://github.com/lyrasis/ORCID-Data-Visualization/blob/main/tableau-visualization/customizing-dashboard.md) page. 
 ## Tableau and accessibility resources
 * [Tableau, A Beginner’s Guide to Tableau Public](https://www.tableau.com/blog/beginners-guide-tableau-public)
 * [Authoring for Accessibility – Tableau](https://onlinehelp.tableau.com/current/pro/desktop/en-us/accessibility_create_view.htm)
