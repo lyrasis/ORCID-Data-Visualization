@@ -62,6 +62,6 @@ Take the steps below to build your own Tableau dashboard. For questions about Ta
 
 <p align="center"><img src="https://github.com/lyrasis/ORCID-Data-Visualization/blob/fbe5c037e1dad039fb2704fac43a4b30c8cb6ec0/tableau-visualization/tableau-screenshots/details.png" alt="Tableau details allow for title, description, inspiration, and external links to be shared with Tableau Public dashboards." width="950"/></p>
 
-32.Review your visualization for any accessibility issues (resources below).  
+32. Review your visualization for any accessibility issues (resources below).  
 
 If you run into any issues with these steps, refer to the Tableau resources below or reach out to Lyrasis ORCID US Community support for further assistance. 
