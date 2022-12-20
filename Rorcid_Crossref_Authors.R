@@ -441,6 +441,7 @@ dois_since_year <- dois_unduped %>%
 
 # This will loop through the column of dois and perform a function that
 # prints the doi (this allows you to ensure it's progressing)
+# there will be warning messages for any DOIs not found at CrossRef
 ##### TIME This will take a long time for large datasets (e.g. for Temple University's 2022 data [600+ DOIs], this took ~80 minutes)
  metadata_since_year <- map(dois_since_year$doi, function(z) {
    print(z)
@@ -830,6 +831,30 @@ co_authors_full_info <- co_authors_full_info %>% select(doi:country2)
 
 # get rid of NA values
 co_authors_full_info[is.na(co_authors_full_info)] <- ""
+
+
+# clean up US state names so they produce single locations on the Tableau map
+# set up a dataframe of state names and abbreviations
+states_df<- data.frame(state.abb, state.name, paste0(state.name,'US'))
+colnames(states_df) <- c('abb','name','id')
+
+# left join the correct state abbreviation for only US states with the full state name spelled out
+# starting with the home authors' region1
+co_authors_full_info$state1<-with(co_authors_full_info,paste0(region1,country1))
+co_authors_full_info <- left_join(co_authors_full_info,states_df,by=c("state1" = "id"))
+
+# overwrite the full state names with the abbreviations where they occur
+co_authors_full_info$region1 <- ifelse(is.na(co_authors_full_info$abb), co_authors_full_info$region1, co_authors_full_info$abb )
+
+# drop the joined columns
+co_authors_full_info <- co_authors_full_info %>% select(doi:country2)
+
+# do the same for the region2, the co_authors' US state names
+co_authors_full_info$state2<-with(co_authors_full_info,paste0(region2,country2))
+co_authors_full_info <- left_join(co_authors_full_info,states_df,by=c("state2" = "id"))
+co_authors_full_info$region2 <- ifelse(is.na(co_authors_full_info$abb), co_authors_full_info$region2, co_authors_full_info$abb )
+co_authors_full_info <- co_authors_full_info %>% select(doi:country2)
+
 
 # write it to a csv to be visualized
 write_csv(co_authors_full_info, "./data/orcid_cr_merge_for_dataviz.csv")
