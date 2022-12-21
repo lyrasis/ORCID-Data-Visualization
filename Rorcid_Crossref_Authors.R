@@ -442,7 +442,7 @@ dois_since_year <- dois_unduped %>%
 # This will loop through the column of dois and perform a function that
 # prints the doi (this allows you to ensure it's progressing)
 # there will be warning messages for any DOIs not found at CrossRef
-##### TIME This will take a long time for large datasets (e.g. for Temple University's 2022 data [600+ DOIs], this took ~80 minutes)
+##### TIME This will take a long time for large datasets (e.g. for Temple University's 2022 data [800+ DOIs], this took ~6 minutes)
  metadata_since_year <- map(dois_since_year$doi, function(z) {
    print(z)
    o <- cr_works(dois = z)
