@@ -861,3 +861,6 @@ write_csv(co_authors_full_info, "./data/orcid_cr_merge_for_dataviz.csv")
 
 # Ta da, you should now have a data file to visualize in Tableau
 
+# Before uploading to Tableau, consider cleaning your data file, either manually or using a tool
+# like Open Refine (https://openrefine.org/). It will improve the visualization if wordings and spellings
+# are standardized, particularly in the organization (org1, org2) and city name (city1, city2) fields.
