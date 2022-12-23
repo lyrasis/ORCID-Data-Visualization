@@ -20,7 +20,7 @@ Take the steps below to build your own Tableau dashboard. For questions about Ta
 <p align="center"><img src="https://github.com/lyrasis/ORCID-Data-Visualization/blob/fbe5c037e1dad039fb2704fac43a4b30c8cb6ec0/tableau-visualization/tableau-screenshots/create%20extract.png" alt="Location of create extract option in Tableau. " width="950"/></p>
 
 13. Click on the **Summary dashboard** tab at the bottom.
-14. At the top of the dashboard, double click on the title. Replace the **[Organization name]** and **[time period from data pull]** and **Data pulled on [date]** with your organization name, the time period requested from the data pull, and the date of the data pull, then click **OK**.
+14. At the top of the dashboard, double click on the title. Replace the **[Organization name]** and **[time period from data pull]** and **Data pulled on [date]** with your organization name, the time period requested from the data pull, and the date of the data pull, then click **OK**. As a reminder, the script pulls data from January 1 of the year requested to the present date of the data pull. 
 15. Scroll down to the **Highest number of collaborations with the following institutions:** visualization. At the bottom of the visualization, double click the caption underneath the bars to fill in the text between the brackets with your own institution’s data.
 16. Click anywhere on the **Highest number of collaborations with the following institutions:** visualization. Four small icons will appear on the right of the gray box around the visualization. Click on the small square with the arrow popping out (second icon down, called **Go to Sheet**). You can use this feature to navigate to individual visualizations from the dashboards. 
 
