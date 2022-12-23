@@ -10,7 +10,7 @@ Take the steps below to build your own Tableau dashboard. For questions about Ta
 
 <p align="center"><img src="https://github.com/lyrasis/ORCID-Data-Visualization/blob/fbe5c037e1dad039fb2704fac43a4b30c8cb6ec0/tableau-visualization/tableau-screenshots/copied%20dashboard.png" alt="Tableau in browser edit view for collaborations dashboard.." width="950"/></p>
 
-7. In the top right corner, click on the blue **Publish** button.
+7. Rename the dashboard. Then, in the top right corner, click on the blue **Publish** button.
 8. In the bottom left corner, click on **Data Source**.
 9. You will see an error message: *Could not find the referenced file: Replace it with another file?*
 10. Click **Yes**. 
@@ -35,7 +35,7 @@ Take the steps below to build your own Tableau dashboard. For questions about Ta
 
 <p align="center"><img src="https://github.com/lyrasis/ORCID-Data-Visualization/blob/fbe5c037e1dad039fb2704fac43a4b30c8cb6ec0/tableau-visualization/tableau-screenshots/edit%20group.png" alt="In Tableau, Edit Group can be found by clicking on a dimension. " width="950"/></p>
 
-20. A list of institutions should pop up. Find your institution and click on it to highlight, then click on **Group**. Label this group as **[Your institution name] Only**. Be sure not to edit the field name at the top (**Org2(group)**). 
+20. A list of institutions should pop up. If there are any intra-institution collaborations in the dataset (for example, a Temple University researcher who collaborated and published with another Temple University researche), find your institution and click on it to highlight, then click on **Group**. Label this group as **[Your institution name] Only**. Be sure not to edit the field name at the top (**Org2(group)**). If there are no intra-institution collaborations in the dataset, delete this filter by clicking on the **x** in the top right when this filter is selected in the dashboard. 
 21. Follow the same steps to select all of the other institutions (including **Null**) and group them. Label that group as **Excluding [your institution name]**.
 
 <p align="center"><img src="https://github.com/lyrasis/ORCID-Data-Visualization/blob/fbe5c037e1dad039fb2704fac43a4b30c8cb6ec0/tableau-visualization/tableau-screenshots/groups%20after%20editing.png" alt="In Tableau, groups can be edited by selected and labeling groups of data. " width="950"/></p>
