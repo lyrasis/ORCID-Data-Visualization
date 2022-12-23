@@ -12,7 +12,7 @@ Take the steps below to build your own Tableau dashboard. For questions about Ta
 
 7. Rename the dashboard. Then, in the top right corner, click on the blue **Publish** button.
 8. In the bottom left corner, click on **Data Source**.
-9. You will see an error message: *Could not find the referenced file: Replace it with another file?*
+9. You will see an error message: *The directory is missing or has been moved: Replace it with another file?*
 10. Click **Yes**. 
 11. Drag and drop or upload your institution’s data file from its location on your device. Tableau will replace the existing data file with this file. This may take several minutes, depending on the file size. 
 12. Once the new data has been added, in the top right corner, click on **Create extract**, then click on **Create extract** again in the pop-up. Depending on the file size, this may take anywhere from several seconds to several minutes. 
