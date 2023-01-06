@@ -49,7 +49,7 @@ Take the steps below to build your own Tableau dashboard. For questions about Ta
 25. Click on the **Individual search** tab. Double click on the title to change the **[time period from data pull]** to the time period for your dataset and **Data pulled on [date]** to add the date of the data pull.  
 26. At the bottom, click on the **Why can't I find my ORCID iD?** tab. Double click on the text to add the appropriate contact information for ORCID support at your institution.
 27.  Make any other customizations to the dashboard. For support with using Tableau, refer to the Tableau Resources section. 
-28.  In the top right corner, click on **Publish** or **Publish as…** to save the dashboard to your Tableau Public profile. 
+28.  In the top right corner, click on **Publish** or **Publish as…** to save the dashboard to your Tableau Public profile. Note that any filters you have selected will be saved once you publish the workbook, so clear any filters that you do not want to be set as the default and make sure you are on the **Full visualization** tab. 
 
 <p align="center"><img src="https://github.com/lyrasis/ORCID-Data-Visualization/blob/fbe5c037e1dad039fb2704fac43a4b30c8cb6ec0/tableau-visualization/tableau-screenshots/publish.png" alt="Tableau dashboard in Tableau Public can be published by clicking on Public button." width="950"/></p>
 
