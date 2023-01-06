@@ -857,7 +857,7 @@ co_authors_full_info <- co_authors_full_info %>% select(doi:country2)
 
 
 # write it to a csv to be visualized
-write_csv(co_authors_full_info, "./data/orcid_cr_merge_for_dataviz.csv")
+write_csv(co_authors_full_info, "./data/orcid-data.csv")
 
 # Ta da, you should now have a data file to visualize in Tableau
 
