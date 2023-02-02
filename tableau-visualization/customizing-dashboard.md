@@ -10,7 +10,7 @@ Take the steps below to build your own Tableau dashboard. For questions about Ta
 
 <p align="center"><img src="https://github.com/lyrasis/ORCID-Data-Visualization/blob/fbe5c037e1dad039fb2704fac43a4b30c8cb6ec0/tableau-visualization/tableau-screenshots/copied%20dashboard.png" alt="Tableau in browser edit view for collaborations dashboard.." width="950"/></p>
 
-7. Rename the dashboard. Then, in the top right corner, click on the blue **Publish** button.
+7. In the top right corner, click on the blue **Publish As...** button, rename the dashboard as needed, and then click on the blue **Publish** button.
 8. In the bottom left corner, click on **Data Source**.
 9. You will see an error message: *The directory is missing or has been moved: Replace it with another file?*
 10. Click **Yes**. 
@@ -20,13 +20,13 @@ Take the steps below to build your own Tableau dashboard. For questions about Ta
 <p align="center"><img src="https://github.com/lyrasis/ORCID-Data-Visualization/blob/fbe5c037e1dad039fb2704fac43a4b30c8cb6ec0/tableau-visualization/tableau-screenshots/create%20extract.png" alt="Location of create extract option in Tableau. " width="950"/></p>
 
 13. Click on the **Summary dashboard** tab at the bottom.
-14. At the top of the dashboard, double click on the title. Replace the **[Organization name]** and **[time period from data pull]** and **Data pulled on [date]** with your organization name, the time period requested from the data pull, and the date of the data pull, then click **OK**. As a reminder, the script pulls data from January 1 of the year requested to the present date of the data pull. 
+14. At the top of the dashboard, double click on the title. Replace the **[Organization name]** and **[time period from data pull]** and **Data pulled on [date]** with your organization name, the time period requested from the data pull, and the date of the data pull, then click **OK** (make sure to delete the brackets after replacing the text). As a reminder, the script pulls data from January 1 of the year requested to the present date of the data pull. 
 15. Scroll down to the **Highest number of collaborations with the following institutions:** visualization. At the bottom of the visualization, double click the caption underneath the bars to fill in the text between the brackets with your own institution’s data.
 16. Click anywhere on the **Highest number of collaborations with the following institutions:** visualization. Four small icons will appear on the right of the gray box around the visualization. Click on the small square with the arrow popping out (second icon down, called **Go to Sheet**). You can use this feature to navigate to individual visualizations from the dashboards. 
 
 <p align="center"><img src="https://github.com/lyrasis/ORCID-Data-Visualization/blob/fbe5c037e1dad039fb2704fac43a4b30c8cb6ec0/tableau-visualization/tableau-screenshots/go%20to%20sheet.png" alt="Demonstration of Go to Sheet icon in Tableau, found on right-hand side of visualizations. " width="950"/></p>
 
-17. On the **Marks** card one of the left-hand panes, click on **Color** to change the color of the bars. You can use the other features in the **Marks** card to edit the colors, sizes, and other aesthetic features of the visualizations. 
+17. On the **Marks** card (one of the left-hand panes), click on **Color** to change the color of the bars. You can use the other features in the **Marks** card to edit the colors, sizes, and other aesthetic features of the visualizations. 
 
 <p align="center"><img src="https://github.com/lyrasis/ORCID-Data-Visualization/blob/fbe5c037e1dad039fb2704fac43a4b30c8cb6ec0/tableau-visualization/tableau-screenshots/edit%20colors.png" alt="Marks card for Tableau controls color selection, size, and other aesthetics." width="950"/></p>
 
@@ -35,7 +35,7 @@ Take the steps below to build your own Tableau dashboard. For questions about Ta
 
 <p align="center"><img src="https://github.com/lyrasis/ORCID-Data-Visualization/blob/fbe5c037e1dad039fb2704fac43a4b30c8cb6ec0/tableau-visualization/tableau-screenshots/edit%20group.png" alt="In Tableau, Edit Group can be found by clicking on a dimension. " width="950"/></p>
 
-20. A list of institutions should pop up. If there are any intra-institution collaborations in the dataset (for example, a Temple University researcher who collaborated and published with another Temple University researche), find your institution and click on it to highlight, then click on **Group**. Label this group as **[Your institution name] Only**. Be sure not to edit the field name at the top (**Org2(group)**). If there are no intra-institution collaborations in the dataset, delete this filter by clicking on the **x** in the top right when this filter is selected in the dashboard. 
+20. A list of institutions should pop up. If there are any intra-institution collaborations in the dataset (for example, a Temple University researcher who collaborated and published with another Temple University researcher), find your institution and click on it to highlight, then click on **Group**. Label this group as **[Your institution name] Only**. Be sure not to edit the field name at the top (**Org2(group)**). If there are no intra-institution collaborations in the dataset, delete this filter by clicking on the **x** in the top right when this filter is selected in the dashboard. 
 21. Follow the same steps to select all of the other institutions (including **Null**) and group them. Label that group as **Excluding [your institution name]**.
 
 <p align="center"><img src="https://github.com/lyrasis/ORCID-Data-Visualization/blob/fbe5c037e1dad039fb2704fac43a4b30c8cb6ec0/tableau-visualization/tableau-screenshots/groups%20after%20editing.png" alt="In Tableau, groups can be edited by selected and labeling groups of data. " width="950"/></p>
@@ -62,6 +62,6 @@ Take the steps below to build your own Tableau dashboard. For questions about Ta
 
 <p align="center"><img src="https://github.com/lyrasis/ORCID-Data-Visualization/blob/fbe5c037e1dad039fb2704fac43a4b30c8cb6ec0/tableau-visualization/tableau-screenshots/details.png" alt="Tableau details allow for title, description, inspiration, and external links to be shared with Tableau Public dashboards." width="950"/></p>
 
-32. Review your visualization for any accessibility issues (resources below). As a general note, any changes that you make to the dashboard as an **editor** will persist. Any changes that you make to the dashboard as a **viewer** (e.g., using a filter, excluding values) can be reset by refreshing the dashboard. 
+32. Review your visualization for any accessibility issues using [accessibility resources](https://github.com/lyrasis/ORCID-Data-Visualization#tableau-and-accessibility-resources). As a general note, any changes that you make to the dashboard as an **editor** will persist. Any changes that you make to the dashboard as a **viewer** (e.g., using a filter, excluding values) can be reset by refreshing the dashboard. 
 
 If you run into any issues with these steps, refer to the Tableau resources below or reach out to Lyrasis ORCID US Community support for further assistance. 
