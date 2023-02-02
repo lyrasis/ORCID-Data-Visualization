@@ -745,9 +745,9 @@ co_auth_ids_unduped <- unique(co_auth_ids[co_auth_ids != ""])
 
 # if a value in co_auth_ids_unduped gives an error when you try to generate my_co_auths_employment below
 # (like that it is locked and cannot be edited)
-# remove it from the list by filling in the problem ORCID ID, uncommenting, and running this statement
+# remove it from the list by filling in the problem ORCID ID (format XXXX-XXXX-XXXX-XXXX), uncommenting, and running this statement
 # then try to generate my_co_auths_employment again
-#co_auth_ids_unduped <- co_auth_ids_unduped[ co_auth_ids_unduped != "<enter problem ORCID ID here>"]
+#co_auth_ids_unduped <- co_auth_ids_unduped[ co_auth_ids_unduped != "enter problem ORCID ID here in format XXXX-XXXX-XXXX-XXXX"]
 
 # get the co-authors employment data from their ORCID profile
 ##### TIME: This may take anywhere from a few seconds to a few minutes (e.g. for Temple University's 2022 data [>850 IDs], this took ~2 minutes)
