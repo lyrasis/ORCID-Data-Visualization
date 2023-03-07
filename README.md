@@ -1,17 +1,24 @@
-# Collaborations exploration using ORCID and DOI data
+# Exploring Publication Collaborations using ORCID and DOI data
 ## Project Summary
-This work came out of a 2022 data visualization project led by the ORCID US Community (administered by Lyrasis) in partnership with the Drexel University LEADING program. This project led to the creation of an R script that can be used to retrieve information about publishing collaborations between researchers at a home organization and other organizations across the globe, based on metadata from researchers’ ORCID records and publication DOI metadata. 
-## Where does the data come from? How can I get my institution’s data?  
-The data are pulled using the R script available in this repository. For support with pulling data, reach out to Lyrasis ORCID US Community support at orcidus@lyrasis.org. 
-## Considerations and context for the data
-**Data errors:** The data pulled using that script are imperfect and contain gaps, as well as user and machine errors. None of the numbers in the data pull are definitive. The data in this dashboard (or the data pulled for your institution) are a snapshot for a specific period of time and may change as researchers obtain/update their ORCID profiles and continue to publish.
+The resources available in this Github repository can be used to create a visualization of publication collaboration activity, based on public data from researchers' ORCID records and Crossref DOI publication metadata. The R script in this repository can be used to retrieve information about publishing collaborations between researchers at a home organization and other organizations across the globe. The resulting CSV file can then be loaded into a [Tableau Public](https://public.tableau.com/app/discover) dashboard to create a collaboration map and additional views to explore the data further. This project was made possible by a 2022 partnership between the [ORCID US Community](https://orcidus.lyrasis.org/) (administered by Lyrasis) and the Drexel University [LEADING program](https://mrc.cci.drexel.edu/leading/). For more information, including full instructions for how to use the tools in this repository, please [see our website](https://orcidus.lyrasis.org/data-visualization/).
+## Retrieving the data
+We recommend using [R Studio](https://posit.co/) to run the [R script](https://github.com/lyrasis/ORCID-Data-Visualization/blob/main/Rorcid_Crossref_Authors.R), which will result in the data needed to create the visualization. Read the comments and follow the instructions in the script to fill in search values and run the commands. You will need the following information for your organization:
+* Organization Name(s)
+* Organization Email Domain(s)
+* Organization Ringgold ID
+* Organization GRID ID (often included as an "other identifier" in the [ROR registry](https://ror.org/search))
+* Organization ROR ID (search the [ROR registry](https://ror.org/search))
 
-* Some examples of data errors that may exist in the data are: 
+For help retrieving any of this information, contact orcidus@lyrasis.org.
+## Considerations and context for the data
+**Data errors:** The data pulled using the R script are imperfect and contain gaps, as well as user and machine errors. The numbers in the data pull are not definitive. The data pulled for your institution are a snapshot for a specific period of time and may change as researchers obtain/update their ORCID profiles and continue to publish.
+
+Some examples of data errors that may exist in the data are: 
 * Missing ORCID iDs
 * Missing geographic information that leads to missing data points on the collaborations map
 * Typos in the institution name or city/country that lead to missing or erroneous ORCID iDs included in the data pulls
 
-It’s important to highlight that this data shouldn’t be used to evaluate or compare researchers against one another because the data are not perfect and do not give a full picture of collaborations and impact. This dashboard is just one angle through which to approach this information.
+It’s important to highlight that this data shouldn’t be used to evaluate or compare researchers against one another because the data are not perfect and do not give a full picture of collaborations and impact. The resources in this repository provide just one angle through which to approach this information.
 
 **Collaboration counting:** In the data pull, collaborations are counted by iterating through each home author and counting the collaborations again. For example, if 2 researchers at Temple (home institution) author a paper with researchers from the University of Texas, this counts as 1 collaboration within Temple and 1 collaboration with UT for each Temple author. In other words, for the home institution as a whole, it’s counted as 2 collaborations within Temple and 2 collaborations with UT. However, in the Tableau dashboard, each DOI is counted as one collaboration for the institution. 
 
@@ -39,4 +46,4 @@ Refer to the [Customizing your own Tableau dashboard](https://github.com/lyrasis
 * [Financial Times "Visual Vocabulary: Tableau Edition"](http://www.vizwiz.com/2018/07/visual-vocabulary.html)
 * [OneNumber, Tableau for Beginners](https://onenumber.biz/blog-1/2022/5/2/tableau-for-beginners-connect-to-data)
 ## Questions and support
-For any questions or support, or to provide feedback, please contact Lyrasis ORCID US Community support at orcidus@lyrasis.org. 
+For any questions or support, or to provide feedback, please contact Lyrasis ORCID US Community support at orcidus@lyrasis.org.
