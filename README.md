@@ -105,3 +105,5 @@ Reach out to your campus ORCID administrator or Lyrasis for further troubleshoot
 * [OneNumber, Tableau for Beginners](https://onenumber.biz/blog-1/2022/5/2/tableau-for-beginners-connect-to-data)
 ## Questions and support
 For any questions or support, or to provide feedback, please contact Lyrasis ORCID US Community support at orcidus@lyrasis.org.
+## Usage License
+[Collaboration Data Visualization](https://github.com/lyrasis/ORCID-Data-Visualization) © 2022 by [Lyrasis](https://orcidus.lyrasis.org/data-visualization/) is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
