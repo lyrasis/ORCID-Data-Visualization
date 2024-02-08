@@ -3,7 +3,7 @@ Take the steps below to build your own Tableau dashboard. For questions about Ta
 1. Request a data pull from ORCID US Community support, or pull your own data using the R script in this repository. **Do not change any of the variable names.** Doing so will cause Tableau to be unable to recognize the variables. 
 2. Make sure that the name of the CSV from the data pull is **orcid-data** 
 3. [Create a Tableau Public account](https://public.tableau.com/desktop/signup_unification.html) for yourself, your institution, or your department. Be sure to check in with your local IT department to ask about any possible restrictions or rules around creating an account. 
-4. While logged in to your Tableau Public account, navigate to the template dashboard featured on the [ORCID US Community Tableau Public profile](https://public.tableau.com/app/profile/orcid.us.community).
+4. While logged in to your Tableau Public account, navigate to the template dashboard featured on the [ORCID US Community Tableau Public profile](https://public.tableau.com/app/profile/orcid.us.community/viz/Lyrasis-CollaborationsDashboardTemplate/Fullvisualization).
 5. Using the menu in the top right of the dashboard, click on the icon with two overlapping rectangles (**Make a copy**).
 <p align="center"><img src="https://github.com/lyrasis/ORCID-Data-Visualization/blob/fbe5c037e1dad039fb2704fac43a4b30c8cb6ec0/tableau-visualization/tableau-screenshots/make%20a%20copy.png" alt="Make a copy button in Tableau." width="350"/></p>
 6. What you should be seeing at this point... 
