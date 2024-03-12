@@ -1,6 +1,6 @@
-# Script by Olivia Given Castello, based on: https://ciakovx.github.io/rorcid.html 
+# Script by Olivia Given Castello, adapted by Sheila Rabun, based on: https://ciakovx.github.io/rorcid.html 
 # and 04-rcrossref_metadata.R at https://github.com/ciakovx/fsci2022/tree/main/code
-# Retrieves ORCID profile and Crossref metadata for authors from a given institution, 
+# Retrieves ORCID profile and Crossref metadata for authors from an existing list of ORCID iDs, 
 # since a given year, paired with that of the co-authors with whom they collaborated.
 
 # Install and load packages -----------------------------------------------
