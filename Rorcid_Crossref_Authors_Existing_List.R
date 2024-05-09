@@ -136,7 +136,7 @@ anchor_city<-"City"
 anchor_region<-"State"
 anchor_country<-"Country"
 
-# read in your list of existing ORCID iDs - it should be a csv file named my_orcids_data and should be formatted with three columns:
+# read in your list of existing ORCID iDs - it should be a csv file named my_orcids_data (make sure you save as .csv) and should be saved within the "data" file in your working directory. It should be formatted with three columns:
 # first column should be titled orcid_identifier_uri and should contain a list of the full ORCID ID URL for each person (example: https://orcid.org/0000-0002-0375-8429)
 # second column should be titled orcid_identifier_path and should contain a list of just the 16 digit ORCID numbers for each person (example: 0000-0002-0375-8429)
 # third column should be titled orcid_identifier_host and should contain a list of just the 16 digit ORCID numbers for each person (example: 0000-0002-0375-8429)
