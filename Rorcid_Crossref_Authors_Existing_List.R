@@ -24,9 +24,11 @@
 #install.packages('janitor')
 #install.packages('glue')
 #install.packages('remotes')
-#remotes::install_github("ropensci/rcrossref")
+#install.packages("ropensci/rcrossref")
 #install.packages('roadoi')
 #install.packages('inops')
+#install.packages("data.table")
+#install.packages("ropensci/geonames")
 
 # load the packages
 library(dplyr)
